@@ -8,6 +8,9 @@ var app = require('../app');
 var debug = require('debug')('apiinmueblesmongo:server');
 var http = require('http');
 
+require('dotenv').config();
+require('../config/db');
+
 /**
  * Get port from environment and store in Express.
  */
