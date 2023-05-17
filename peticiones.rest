@@ -1,0 +1,32 @@
+GET http://localhost:3000/api/inmuebles
+
+###
+POST http://localhost:3000/api/inmuebles
+Content-Type: application/json
+
+{
+    "piso": 4,
+    "letra": "N",
+    "extension": 60,
+    "habitaciones": 2,
+    "alquilado": false,
+    "propietario": "Rocio Sanchez",
+    "email": "rocio@gmail.com"
+}
+
+###
+PUT http://localhost:3000/api/inmuebles/645cfe5896a70b7ee8c30888
+Content-Type: application/json
+
+{
+    "piso": 1,
+    "letra": "A",
+    "extension": 50,
+    "habitaciones": 1,
+    "alquilado": false,
+    "propietario": "Maria Fernandez",
+    "email": "maria@gmail.com"
+}
+
+###
+DELETE http://localhost:3000/api/inmuebles/646488d354fa023c80950405
